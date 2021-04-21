@@ -7,8 +7,8 @@
     width: 100%;
     height:650px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
     
 }
 
@@ -38,39 +38,81 @@
 
      .wrapper h1
      {
-        color: #F7736D;
-        font-size: 80px;
+        color:#EAF561;
+        font-size: 40px;
+        justify-content: center;
      }
 
      .wrapper p
      {
         font-size: 25px;
      }
+
+.wrapper textarea
+     {
+width: 40%; 
+        padding: 10%; 
+       
+     }
+     
+     .wrapper input
+     {
+width: 60%; 
+        
+       
+     }
+
+
+.wrapper button {
+text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #A01507;
+    border-radius: 6px;
+    border: 2px solid #0016b0;
+}
+  .wrapper button:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+
+  }
+
+#contenedorforma button {
+    
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 </style>
 <body>
 <form name="contact" method="POST" data-netlify="true">
  <div class="contenedorforma">
-  
+  <center>
  <div class="wrapper">
+  <h1>Contacto con el vendedor</h1>
   <p>
-    <label>Nombre <input type="text" name="name" /></label>   
+    <label>Nombre <br><input type="text" name="name" /></label>   
   </p>
   <p>
-    <label>Correo electronico: <input type="email" name="email" /></label>
+    <label>Correo electronico: <br><input type="email" name="email" /></label>
   </p>
   <p>
-    <label>Asunto <select name="role[]" multiple>
+    <label>Asunto <br><select name="rol[]" multiple>
       <option value="Leader">Negocios</option>
       <option value="Follower">Sugerencias</option>
       <option value="quejas">Quejas</option>
       <option value="sugerencia">Productos</option>
+       <option value="cuestiones">Preguntas</option>
+       <option value="cuestiones">Uso</option>
     </select></label>
   </p>
   <p>
-    <label>Mensaje <textarea name="message"></textarea></label>
+    <label>Mensaje <br><textarea name="message"></textarea></label>
   </p>
   <p>
     <button type="submit">Enviar</button>
   </p>
   </form>
-</div></div></body
+</div></div></center></body
