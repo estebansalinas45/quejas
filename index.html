@@ -9,14 +9,49 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
+  .contenedorforma{
+        width: 100%;
+        max-width: 700px;
+        background-color: #FFFFFF30; 
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding-bottom: 50px;
+        
+     }
+  
+   .wrapper
+        { 
+        color: #fff;
+        width: 480px; 
+        padding: 20px;    
+     }
+
+     .wrapper a
+     {
+        color:#7FDFFF;
+     }
+
+     .wrapper h1
+     {
+        color: #F7736D;
+        font-size: 80px;
+     }
+
+     .wrapper p
+     {
+        font-size: 25px;
+     }
 </style>
 <body>
 <form name="contact" method="POST" data-netlify="true">
- <div class="contenedor">
+ <div class="contenedorforma">
   
-<center>
+ <div class="wrapper">
   <p>
     <label>Nombre <input type="text" name="name" /></label>   
   </p>
@@ -37,5 +72,5 @@
   <p>
     <button type="submit">Enviar</button>
   </p>
-  </form></center>
-</div></body
+  </form>
+</div></div></body
